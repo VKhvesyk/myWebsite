@@ -1,0 +1,30 @@
+.title {
+    font-family: 'Poppins';
+    &_fz50 {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 58px;
+        letter-spacing: 0.75px;
+    }
+    &_fz24 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+    }
+    &_fz18 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    &_fz16 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &_fz14 {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+    &_opacity75 {
+        opacity: 75%;
+    }
+}

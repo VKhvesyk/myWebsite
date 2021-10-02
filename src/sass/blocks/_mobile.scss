@@ -1,0 +1,27 @@
+.mobile {
+    &-contacts {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 130px;
+        div {
+            display: flex;
+            justify-content: space-between;
+            a {
+                display: block;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    &-education {
+        display: none;
+        margin-bottom: 55px;
+        p {
+            span {
+                opacity: 100%;
+                font-weight: 700;
+            }
+        }
+    }
+}
