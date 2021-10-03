@@ -1,0 +1,163 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+    .main {
+        &-wrapper {
+            width: 970px;
+        }
+        &-right-column__card {
+            width: 265px;
+        }
+    }
+}
+ 
+@media (max-width: 992px) {
+    .container {
+        width: 750px;
+    }
+    .main {
+        &-wrapper {
+            width: 750px;
+        }
+        &-right-column__skills {
+            div {
+                div {
+                    width: 200px;
+                }
+            }
+        }
+        &-right-column__card {
+            width: 420px;
+        }
+        &-left-column-info {
+            padding: 50px 20px;
+        }
+    }
+}
+ 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: unset;
+    }
+    .main {
+        &-wrapper {
+            width: 100%;
+            margin: unset;
+        }
+        &-left-column {
+            width: 10%;
+            height: unset;
+            img {
+                display: none;
+            }
+            &-info {
+                display: none;
+            }
+            &__contacts {
+                display: none;
+            }
+            &__education {
+                display: none;
+            }
+        }
+        &-right-column {
+            padding: 20px 25px;
+            width: 90%;
+            &__cards {
+                justify-content: center;
+            }
+        }
+    }
+    .mobile {
+        &-education {
+            display: block;
+        }
+        &-contacts {
+            display: flex;
+        }
+    }
+}
+ 
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .main {
+        &-wrapper {
+            width: 100%;
+            margin: unset;
+        }
+        &-right-column {
+            &__skills {
+                div {
+                    div {
+                        width: 315px;
+                        span {
+                            width: 130px;
+                        }
+                    }
+                }
+            }
+            &__card {
+                width: 285px;
+            }
+        }
+    }
+    .title {
+        &_fz16 {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .container {
+        width: 100%;
+    }
+    .main {
+        &-wrapper {
+            width: 100%;
+            margin: unset;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+        width: 100%;
+    }
+    .main {
+        &-wrapper {
+            width: 100%;
+            margin: unset;
+        }
+        &-right-column {
+            padding: 20px 0px 20px 20px;
+            &__cards {
+                position: relative;
+                left: -10px;
+            }
+            &__card {
+                width: 225px;
+            }
+            &__skills {
+                div {
+                    div {
+                        width: 250px;
+                        span {
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobile {
+        &-contacts {
+            padding-right: 10px;
+        }
+    }
+
+}
