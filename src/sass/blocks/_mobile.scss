@@ -1,22 +1,35 @@
 .mobile {
     &-contacts {
         display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 130px;
-        div {
+        grid-area: contacts;
+        &-wrapper {
             display: flex;
-            justify-content: space-between;
-            a {
-                display: block;
-                text-decoration: none;
-                color: black;
+            flex-direction: column;
+            &__social {
+                :first-child {
+                    font-weight: 700;
+                }
+                :nth-child(2) {
+                    margin-bottom: 15px;
+                }
+            }
+            div {
+                margin-bottom: 15px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                }
+                p {
+                    margin-bottom: 5px;
+                }
             }
         }
     }
     &-education {
         display: none;
-        margin-bottom: 55px;
+        margin-top: 40px;
+        grid-area: education;
         p {
             span {
                 opacity: 100%;

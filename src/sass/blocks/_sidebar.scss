@@ -1,0 +1,58 @@
+.sidebar {
+    grid-area: sidebar;
+    background-color: $main-color;
+    img {
+        width: 100%;
+    }
+    &-wrapper {
+        color: white;
+        padding: 50px 50px;
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__social {
+            margin-bottom: 20px;
+            p {
+                margin-bottom: 5px;
+            }
+            a {
+                display: block;
+                margin-bottom: 5px;
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+        }
+        &__email {
+            margin-bottom: 20px;
+            p {
+                margin-bottom: 5px;
+            }
+            a {
+                display: block;
+                margin-bottom: 5px;
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+        }
+        &__link {
+            p {
+                margin-bottom: 5px;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                margin-bottom: 5px;
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+}

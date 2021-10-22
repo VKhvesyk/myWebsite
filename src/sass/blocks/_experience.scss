@@ -1,0 +1,11 @@
+.experience {
+    grid-area: experience;
+    margin-top: 40px;
+    &-wrapper {
+        p {
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}

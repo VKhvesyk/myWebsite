@@ -1,0 +1,41 @@
+.skills {
+    grid-area: skills;
+    margin-top: 40px;
+    &-wrapper {
+        width: 90%;
+    }
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        margin-bottom: 10px;
+        p {
+            margin: 0px;
+            font-size: 16px;
+            font-weight: 700;
+            opacity: 75%;
+        }
+        &__scale {
+            display: block;
+            position: relative;
+            width: 100px;
+            height: 3px;
+            background-color: $main-color;
+            span {
+                display: block;
+                position: absolute;
+                top: 50%;
+                width: 9px;
+                height: 9px;
+                transform: translateY(-50%);
+                background-color: $main-color;
+            }
+        }
+    }
+}

@@ -1,13 +1,10 @@
 @media (max-width: 1200px) {
     .container {
-        width: 970px;
+        width: 925px;
     }
-    .main {
-        &-wrapper {
-            width: 970px;
-        }
-        &-right-column__card {
-            width: 265px;
+    .about-wrapper {
+        &__text {
+            width: 95%;
         }
     }
 }
@@ -16,148 +13,120 @@
     .container {
         width: 750px;
     }
-    .main {
-        &-wrapper {
-            width: 750px;
+    .sidebar-wrapper {
+        padding: 40px 20px;
+    }
+    .skills-wrapper {
+        width: 95%;
+    }
+    .skills-item {
+        width: 225px;
+        &__scale {
+            width: 90px;
         }
-        &-right-column__skills {
-            div {
-                div {
-                    width: 200px;
-                }
-            }
+    }
+    .portfolio {
+        &-cards {
+            padding-top: 25px;
         }
-        &-right-column__card {
-            width: 420px;
-        }
-        &-left-column-info {
-            padding: 50px 20px;
+        &-card {
+            width: 400px;
+            height: 320px;
         }
     }
 }
  
 @media (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 550px;
         margin: unset;
+        grid-template-columns: 5% 95%;
+        grid-template-areas: 
+        'sidebar main'
+        'sidebar about'
+        'sidebar experience'
+        'sidebar education'
+        'sidebar skills'
+        'sidebar portfolio'
+        'sidebar contacts';
     }
-    .main {
+    .sidebar {
         &-wrapper {
-            width: 100%;
-            margin: unset;
+            display: none;
         }
-        &-left-column {
-            width: 10%;
-            height: unset;
-            img {
-                display: none;
-            }
-            &-info {
-                display: none;
-            }
-            &__contacts {
-                display: none;
-            }
-            &__education {
-                display: none;
-            }
+        img {
+            display: none;
         }
-        &-right-column {
-            padding: 20px 25px;
-            width: 90%;
-            &__cards {
-                justify-content: center;
-            }
+    }
+    .skills-item {
+        width: 220px;
+        &__scale {
+            width: 90px;
         }
     }
     .mobile {
-        &-education {
+        &-contacts {
             display: block;
         }
-        &-contacts {
-            display: flex;
+        &-education {
+            display: block;
         }
     }
 }
  
 @media (max-width: 576px) {
     .container {
-        width: 100%;
-    }
-    .main {
-        &-wrapper {
-            width: 100%;
-            margin: unset;
-        }
-        &-right-column {
-            &__skills {
-                div {
-                    div {
-                        width: 315px;
-                        span {
-                            width: 130px;
-                        }
-                    }
-                }
-            }
-            &__card {
-                width: 285px;
-            }
-        }
+        width: 400px;
     }
     .title {
         &_fz16 {
             font-size: 14px;
         }
     }
+    .skills-item {
+        width: 300px;
+        &__scale {
+            width: 120px;
+        }
+    }
+    .portfolio-cards {
+        flex-direction: column;
+        padding-left: 13px;
+    }
+    .portfolio-card {
+        width: 330px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 426px) {
     .container {
-        width: 100%;
+        width: 350px;
     }
-    .main {
-        &-wrapper {
-            width: 100%;
-            margin: unset;
-        }
+    .portfolio-cards {
+        padding-left: unset;
+    }
+    .portfolio-card {
+        width: 310px;
+        height: 300px;
     }
 }
 
 @media (max-width: 376px) {
     .container {
-        width: 100%;
+        width: 295px;
     }
-    .main {
-        &-wrapper {
-            width: 100%;
-            margin: unset;
-        }
-        &-right-column {
-            padding: 20px 0px 20px 20px;
-            &__cards {
-                position: relative;
-                left: -10px;
-            }
-            &__card {
-                width: 225px;
-            }
-            &__skills {
-                div {
-                    div {
-                        width: 250px;
-                        span {
-                            width: 110px;
-                        }
-                    }
-                }
-            }
+    .mobile-education-wrapper {
+        width: 95%;
+    }
+    .skills-item {
+        width: 250px;
+        &__scale {
+            width: 100px;
         }
     }
-    .mobile {
-        &-contacts {
-            padding-right: 10px;
-        }
+    .portfolio-card {
+        width: 250px;
+        height: 210px;
     }
-
 }

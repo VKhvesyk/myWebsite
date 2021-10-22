@@ -44,8 +44,8 @@ window.onload = function() {
 
 
 
-const   scales = document.querySelectorAll('.scale'),
-        markers = document.querySelectorAll('.scale span'); 
+const   scales = document.querySelectorAll('.skills-item__scale'),
+        markers = document.querySelectorAll('.skills-item__scale span'); 
 
 scales.forEach((item, index) => {
     markers[index].style.left = item.dataset.percent + '%';
